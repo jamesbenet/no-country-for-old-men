@@ -55,38 +55,25 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 -Readme file with my project's worksheet, a link to the live site and other pertinent info.
 
--Find an use an external API.
+-Find an external API, read the documentation available and make sure it's usable.
 
-Build site to display data using HTML, CSS and Javascript.
+-Build site to display data using HTML, CSS and Javascript.
 
-Style with Flexbox.
+-Style with Flexbox or Grid.
 
-Make a GET request with axios to retrieve external data from API and pass it to my site's DOM.
+-Make a GET request with axios to retrieve external data from API and insert some of the retrieved data my site's DOM.
 
-Implemenet responsive design on my site, so that it will be presentable on a tablet/cellphone (at least one) as well as laptop.
+-Implemenet responsive design on my site, so that it will be presentable on a tablet/cellphone (at least one) as well as laptop.
 
-Host my site on a free hosting service such as Github pages.
+-Host my site on a free hosting service such as Github pages.
 
 #### PostMVP  
-Readme file with my project's worksheet, a link to the live site and other pertinent info.
+-Add more pertinent data; my goal in MVP is to present 4 data points for each country but I could add more countries and data points
 
-Find an use an external API.
-
-Build site to display data using HTML, CSS and Javascript.
-
-Style with Flexbox.
-
-Make a GET request with axios to retrieve external data from API and pass it to my site's DOM.
-
-Implemenet responsive design on my site, so that it will be presentable on a tablet/cellphone (at least one) as well as laptop.
-
-Host my site on a free hosting service such as Github pages.
-
-Daily Github commits.
+-add graphs/pictures to improve presntation of my site
 
 
 ## Project Schedule
