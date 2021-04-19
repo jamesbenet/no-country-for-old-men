@@ -105,11 +105,11 @@ https://github.com/jamesbenet/no-country-for-old-men/blob/main/5645B061-57E2-426
 |Pseudocode |   | 3 hr |     |    |
 |HTML structure |   | 2hr |     |    |
 |CSS + flexbox |   | 3hr |     |    |
-|Working w/ API (JS) | H  | 5hr |     |    |
+|Working w/ API (JS) | H  | 8hr |     |    |
 |Coding (any) |  H | 3hr |     |    |
 |MVP focus |  H | 3hr |     |    |
 |Troubleshooting |  H | 3hr |     |    |
-| Total | H | 19hrs|  |  |
+| Total | H | 25hrs|  |  |
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
