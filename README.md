@@ -108,6 +108,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 |Pseudocode |   | 1hr |     |    |
+|HTML structure |   | 2hr |     |    |
+|CSS + flexbox |   | 1hr |     |    |
+|Working w/ API |   | 6hr |     |    |
+|Pseudocode |   | 1hr |     |    |
+|advanced HTML/CSS/Javascript |   | 2hr |     |    |
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
