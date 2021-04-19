@@ -48,7 +48,7 @@ https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://github.com/jamesbenet/no-country-for-old-men/blob/main/untitled.pdf
 
 ### MVP/PostMVP
 
@@ -75,6 +75,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 -add graphs/pictures to improve presntation of my site
 
+-added CSS functionality such as mouse hover behavior and highlighting certain data
+
 
 ## Project Schedule
 
@@ -94,7 +96,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://github.com/jamesbenet/no-country-for-old-men/blob/main/5645B061-57E2-4261-833A-E5B1970F8BB3.jpeg
 
 ## Timeframes
 
