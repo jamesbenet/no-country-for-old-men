@@ -1,16 +1,50 @@
 # Project Overview
 
 ## Project Name
-
-The name of your project with deployed URL.
+No Country for Old Men
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This app will show available gun data of US and some other developed countries, data to include: 
+    number of privately owned firearms, 
+    rate of civilian firearm posession per 100k people, 
+    total number of gun deaths, 
+    rate of all gun deaths per 100k people.
+    
+    Data comes from gunpolicy.org
+
 
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+Base URL of the API I'm using is https://www.gunpolicy.org
+
+This particular query shows the countries with available data:
+https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&format=raw&resource=getlocations
+
+{
+            "id": "7",
+            "location_id": "7",
+            "name": "Argentina",
+            "location": "Argentina",
+            "type": "country",
+            "iso2": "AR",
+            "iso3": "ARG"
+        },
+	
+This particular query shows the # of annual deaths resulting from firearms in Netherlands:
+https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=125&format=raw
+
+{
+    "result": {
+        "id": "155",
+        "location_id": "125",
+        "location": "Netherlands",
+        "columnValue": "2018: 76{q13354}; 2017: 86; 2016: 72; 2015: 78; 2014: 74; 2013: 72; 2012: 95; 2011: 100; 2010: 76; 2009: 95; 2008: 78; 2007: 84; 2006: 82; 2005: 104; 2004: 101; 2003: 104; 2002: 122; 2001: 114; 2000: 116; 1999: 145; 1998: 131; 1997: 133; 1996: 143;",
+        "columnPreamble": "In #, annual deaths resulting from firearms total ~"
+    }
+}
+
 
 ## Wireframes
 
@@ -23,15 +57,37 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+-Readme file with my project's worksheet, a link to the live site and other pertinent info.
+
+-Find an use an external API.
+
+Build site to display data using HTML, CSS and Javascript.
+
+Style with Flexbox.
+
+Make a GET request with axios to retrieve external data from API and pass it to my site's DOM.
+
+Implemenet responsive design on my site, so that it will be presentable on a tablet/cellphone (at least one) as well as laptop.
+
+Host my site on a free hosting service such as Github pages.
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+Readme file with my project's worksheet, a link to the live site and other pertinent info.
 
-- Add second API
-- Use local storage to save user favorites
+Find an use an external API.
+
+Build site to display data using HTML, CSS and Javascript.
+
+Style with Flexbox.
+
+Make a GET request with axios to retrieve external data from API and pass it to my site's DOM.
+
+Implemenet responsive design on my site, so that it will be presentable on a tablet/cellphone (at least one) as well as laptop.
+
+Host my site on a free hosting service such as Github pages.
+
+Daily Github commits.
+
 
 ## Project Schedule
 
