@@ -19,8 +19,8 @@ This app will show SOME available gun data from the United States and other coun
 
 Base URL of the API I'm using is https://www.gunpolicy.org
 
-This particular query shows the countries with available data:
-https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&format=raw&resource=getlocations
+This particular query shows the [countries with available data]:
+(https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&format=raw&resource=getlocations)
 
 {
             "id": "7",
@@ -32,8 +32,8 @@ https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&
             "iso3": "ARG"
         },
 	
-This particular query shows the # of annual deaths resulting from firearms in Netherlands:
-https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=125&format=raw
+This particular query shows the [# of annual deaths resulting from firearms in Netherlands]:
+(https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=125&format=raw)
 
 {
     "result": {
@@ -48,11 +48,9 @@ https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&
 
 ## Wireframe
 
-https://github.com/jamesbenet/no-country-for-old-men/blob/main/untitled.pdf
+[View Wireframe](https://github.com/jamesbenet/no-country-for-old-men/blob/main/untitled.pdf)
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 
@@ -100,7 +98,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Priority Matrix
 
-https://github.com/jamesbenet/no-country-for-old-men/blob/main/5645B061-57E2-4261-833A-E5B1970F8BB3.jpeg
+[View Matrix](https://github.com/jamesbenet/no-country-for-old-men/blob/main/Priority%20Matrix%20Template.pdf)
 
 ## Timeframes
 
