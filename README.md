@@ -1,22 +1,22 @@
 # Project Overview
 
-## Project Name
-No Country for Old Men
+## No Country for Old Men
+
 
 ## Project Description
 
-This app will show available gun data of US and some other developed countries, data to include: 
-    number of privately owned firearms, 
-    rate of civilian firearm posession per 100k people, 
-    total number of gun deaths, 
-    rate of all gun deaths per 100k people.
+This app will show SOME available gun data from the United States and other countries. Data to include: 
+
+    1. Number of privately owned firearms
+    2. Rate of civilian firearm posession per 100k people
+    3. Total number of gun deaths
+    4. Rate of all gun deaths per 100k people
     
-    Data comes from gunpolicy.org
+-This data will be retrieved from [GunPolicy.org](http://www.gunpolicy.org) through their [API](http://www.gunpolicy.org/api).
 
 
-## API and Data Sample
+## GunPolicy.org: International firearm injury prevention and policy
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 Base URL of the API I'm using is https://www.gunpolicy.org
 
 This particular query shows the countries with available data:
@@ -46,7 +46,7 @@ https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&
 }
 
 
-## Wireframes
+## Wireframe
 
 https://github.com/jamesbenet/no-country-for-old-men/blob/main/untitled.pdf
 
@@ -77,17 +77,21 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 -added CSS functionality such as mouse hover behavior and highlighting certain data
 
+-local storage
+
+-add additional API(s)
+
+-add animation
+
+-get input from UX student re: giving my app intuitive UI and design
+
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|April 16-18| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|April 19| Project Approval | Incomplete
+|April 16-18| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|April 19| Project Approval | Complete
 |April 20| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |April 20| Pseudocode / actual code | Incomplete
 |April 21| Initial Clickable Model  | Incomplete
@@ -102,12 +106,14 @@ https://github.com/jamesbenet/no-country-for-old-men/blob/main/5645B061-57E2-426
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Pseudocode |   | 3 hr |     |    |
-|HTML structure |   | 2hr |     |    |
-|CSS + flexbox |   | 3hr |     |    |
-|Working w/ API (JS) | H  | 8hr |     |    |
-|Coding (any) |  H | 3hr |     |    |
-|MVP focus |  H | 3hr |     |    |
+|Pseudocode(site planning/implementation) |   | 3 hr |     |    |
+|HTML structure (basic design/requirements) |   | 2hr |     |    |
+|CSS + flexbox (site layout/appearance) |   | 2 hr |     |    |
+|Working w/ API-working with data  | H  | 2hr |     |    |
+|Working w/ API-javascript | H  | 3 hr |     |    |
+|Working w/ API-improve data/presentation | H  | 3hr |     |    |
+|Coding (any) |  H | 3 hr |     |    |
+|MVP focus (focus on overall requirements/best practices) |  H | 3hr |     |    |
 |Troubleshooting |  H | 3hr |     |    |
 | Total | H | 25hrs|  |  |
 ## Code Snippet
@@ -121,4 +127,6 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ Use this section to document what changes were made and the reasoning behind those changes. 
+
+
