@@ -1,0 +1,15 @@
+banner
+  page title
+  background image?
+present US data
+dropdown menu of 10 countries
+user selects country
+eventhandler
+return four data sets (how to handle incomplete data)
+     side by side or underneath?
+asterix/qualifier/explanation of data
+footer
+  gunpolicy.org link/credit
+  my info
+  GA link?
+
