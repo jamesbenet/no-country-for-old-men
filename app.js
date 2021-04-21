@@ -1,36 +1,13 @@
 console.log("hello")
 
 
-//ENDPOINT= TOTAL # OF GUN DEATHS BY LOCATION
 
-      // https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw
-
-
-// let id = 10
-
-// async function gunDeathsByCountry(id) {
-//   const url = `https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=${10}&format=raw'
-//   `
-  
-//   try {
-//     const results = await axios.get(url)
-//     const info = results.data.drinks
-
-//     info.forEach((info) => {
-//       searchByDrinkId(info.idDrink)
-//     })
-
-//   }
-//   catch (error) { 
-//     console.log(error)
-//   }
-// }
-
+// https://cors-anywhere.herokuapp.com/
       // Create dynamic dropdown menu from GET all countries (from dogs-code-along)
       // https://dog.ceo/api/breeds/list/all
 
 const getOptions = async () => {
-  const url = 'https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getlocations&format=raw' 
+  const url = 'https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getlocations&format=raw' 
   try {
     const response = await axios.get(url)
     let countryList = Object.keys(response.data.message)
@@ -48,7 +25,9 @@ getOptions()
 
 
 
+//ENDPOINT= TOTAL # OF GUN DEATHS BY LOCATION
 
+      // https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw
 
 
       //ajax intro starter code solution--using country list URL
@@ -149,4 +128,38 @@ const dropdownOptions = document.querySelectorAll('.dropdown .option');
 //bind listeners to these elements
 dropdownTitle.addEventListener('click', toggleMenuDisplay);
 dropdownOptions.forEach(option => option.addEventListener('click',handleOptionSelected));
-document.querySelector('.dropdown .title').addEventListener('change',handleTitleChange);
+document.querySelector('.dropdown .title').addEventListener('change', handleTitleChange);
+
+
+
+
+
+
+
+
+
+
+//ENDPOINT= TOTAL # OF GUN DEATHS BY LOCATION
+
+      // https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw
+
+
+// let id = 10
+
+// async function gunDeathsByCountry(id) {
+//   const url = `https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw'
+//   `
+  
+//   try {
+//     const results = await axios.get(url)
+//     const info = results.data.drinks
+
+//     info.forEach((info) => {
+//       searchByDrinkId(info.idDrink)
+//     })
+
+//   }
+//   catch (error) { 
+//     console.log(error)
+//   }
+// }
