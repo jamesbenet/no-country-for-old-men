@@ -5,6 +5,8 @@ body {
 	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
+/* REPLACED DIV (TAG WITH CLASS "option" AND ID 'option1') which contained option 1 with a select/option tag in my dropdown menu */
+
 .hide {
     max-height: 0 !important;
 }

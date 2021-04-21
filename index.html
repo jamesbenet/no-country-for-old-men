@@ -23,37 +23,44 @@
   <br><br><br><br><br><br><br><br><br><br>
 
 
-
-
-
-
-
-
   <!-- https://www.freecodecamp.org/news/how-to-create-a-dropdown-menu-with-css-and-javascript/ -->
+  <!-- ADDED FORM TAG -->
+  <form class="form1">
   <div class='dropdown'>
 		<div class='title pointerCursor'>Select an option <i class="fa fa-angle-right"></i></div>
 		
-		<div class='menu pointerCursor hide'>
+
+    <!-- replacing div below with sellect tag -->
+		<!-- <div class='menu pointerCursor hide'> -->
+      <select id="country-select">
           <!-- CANADA? -->
           <!-- ADDING/TESTING SELECT AND OPTION     -->
-      <select id="country-select"></select>
-      <div class='option' id='option1'>Option 1</div>
+      
+        
+      <option class = "canada" value="31">CANADA</option>
           <!-- RUSSIA? -->
-			<div class='option' id='option2'>Option 2</div>
+      <option class = "mexico" value="113">MEXICO</option>
           <!-- MEXICO? -->
-			<div class='option' id='option3'>Option 3</div>
+      <option class = "russia" value="153">RUSSIA</option>
           <!-- UK -->
-			<div class='option' id='option4'>Option 4</div>
-      <div class='option' id='option4'>Option 5</div>
+      <option class = "canada" value="192">UK</option></select>
+    
+      <!-- <div class='option' id='option4'>Option 5</div>
       <div class='option' id='option4'>Option 6</div>
       <div class='option' id='option4'>Option 7</div>
       <div class='option' id='option4'>Option 8</div>
       <div class='option' id='option4'>Option 9</div>
-      <div class='option' id='option4'>Option 10</div>
-		</div>
-
+      <div class='option' id='option4'>Option 10</div> -->
+      
+		<!-- </div> -->
+<!-- ADDING SUBMIT -->
+      
 	</div>
+  <input type="submit" value="Get Data!">
+</form>
 	<span id='result'>The result is: </span>
+
+  <div class='countryData'></div>
 	
 
 

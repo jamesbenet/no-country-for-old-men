@@ -5,6 +5,10 @@ present US data
 dropdown menu of 10 countries
   design drop-down menu/button (use button?)
 user selects country
+  user selects Canada--option tag has value"31"
+store this value in a variable
+  
+
 eventhandler
 return four data sets (how to handle incomplete data)
      side by side or underneath?
@@ -47,8 +51,22 @@ footer
 
   Yemen         204                         unavail               unavail          2007(2nd), 2017        10th out of 178 countries (2007) 
   
-  
-  
+ Endpoints:
 
+gun death rate (location_id=10 is Australia)
+
+https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=rate_of_all_gun_deaths_per_100_000_people&location_id=10=raw
+
+total deaths
+
+https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw
+
+firearm possession rate
+
+https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=rate_of_civilian_firearm_possession&location_id=10&format=raw
+
+total guns
+
+https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=number_of_privately_owned_firearms&location_id=10&format=raw
 
 
