@@ -90,7 +90,7 @@ This particular query shows the [# of annual deaths resulting from firearms in N
 |---|---| ---|
 |April 16-18| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |April 19| Project Approval | Complete
-|April 20| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|April 20| Core Application Structure (HTML, CSS, etc.) | Complete
 |April 20| Pseudocode / actual code | Incomplete
 |April 21| Initial Clickable Model  | Incomplete
 |April 22| MVP | Incomplete
@@ -104,14 +104,14 @@ This particular query shows the [# of annual deaths resulting from firearms in N
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Pseudocode(site planning/implementation) |   | 3 hr |     |    |
-|HTML structure (basic design/requirements) |   | 2hr |     |    |
-|CSS + flexbox (site layout/appearance) |   | 2 hr |     |    |
-|Working w/ API-working with data  | H  | 2hr |     |    |
+|Pseudocode(site planning/implementation) |   | 3 hr | .5hr    |    |
+|HTML structure (basic design/requirements) |   | 2hr | .5hr    |    |
+|CSS + flexbox (site layout/appearance) |   | 2 hr | .25hr    |    |
+|Working w/ API-working with data  | H  | 2hr |     | 2hr   |
 |Working w/ API-javascript | H  | 3 hr |     |    |
-|Working w/ API-improve data/presentation | H  | 3hr |     |    |
+|Working w/ API-improve data/presentation | H  | 3hr | .5hr    |    |
 |Coding (any) |  H | 3 hr |     |    |
-|MVP focus (focus on overall requirements/best practices) |  H | 3hr |     |    |
+|MVP focus (focus on overall requirements/best practices) |  H | 3hr | .5hr    |    |
 |Troubleshooting |  H | 3hr |     |    |
 | Total | H | 25hrs|  |  |
 ## Code Snippet

@@ -3,6 +3,7 @@ banner
   background image?
 present US data
 dropdown menu of 10 countries
+  design drop-down menu/button (use button?)
 user selects country
 eventhandler
 return four data sets (how to handle incomplete data)
@@ -12,4 +13,40 @@ footer
   gunpolicy.org link/credit
   my info
   GA link?
+
+  API info 
+
+  "result": object
+    "location_id" identifies country USED TO QUERY COUNTRY data
+    "location" country
+    "columnValue" data object {year: number;}
+    "columnPreamble" string introducing data, ex. "In #, the annual rate of..."
+
+    DISPLAY DATA IN TABLE?
+
+                location_id               gundeathrate/100k     totalgundeaths    civfirearmposessrate  pvtownedfirearms    
+  Australia     10                        1979-2019 incl        1979-2019 incl    11 years 1975-2016    11 years 1975-2016
+  Canada        31                        2000-2018             2000-2018         2005,8-11,17            2005,2008-11,17
+  France        66                         1997-2016            1997-2016         2005,2016,2017          2005,2016,2017
+  Germany                                  1998-2018            1998-2018          2005,2013,2016         2005,2013,2016
+  Mexico        113                        1998-2017            1998-2017          2004,5,6,7,9,10,2017   2004,5,6,7,9,10,2017
+  Russia        153                        1995-2018            1995-2018          2007,2017              2007,2017
+  Spain         172                        1997-2017            1997-2017          2007,2017              2007,2017
+  UK            192                        1996-2016            1996-2016          2017                   2017
+  US            194                        1999-2019 incl       1999-2019 incl     2007,2017              estimate
+  
+  death rate- 1999-2016
+  totalguns     "
+  firearmrate 2017 all but Germany(2005,2013,2016), Australia (11 years 1975-2016)
+  pvtowned    4 countr have 
+  
+  China                                    unavail              unavail           2007,2017               2007,2017 
+  India         82                         1999-08,10,14        1999-08,10,14      2007,2017              2007,2017
+
+  Yemen         204                         unavail               unavail          2007(2nd), 2017        10th out of 178 countries (2007) 
+  
+  
+  
+
+
 
