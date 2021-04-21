@@ -7,13 +7,14 @@ console.log("hello")
       // https://dog.ceo/api/breeds/list/all
 
 const getOptions = async () => {
-  const url = 'https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getlocations&format=raw' 
+  const url = 'https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getlocations&format=raw' 
   try {
     const response = await axios.get(url)
-    let countryList = Object.keys(response.data.message)
+    console.log(response)
+    // let countryList = Object.keys(response.data.message)
     // setOptions(countryList)
     // return countryList
-    console.log(countryList)
+    // console.log(countryList)
   }
   catch (error) {
     console.error(error)
