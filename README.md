@@ -5,22 +5,23 @@
 
 ## Project Description
 
-This app will show SOME available gun data from the United States and other countries. Data to include: 
+This app will show some available gun data from the United States and other countries. Specifically, it will GET data from the [gunpolicy.org] API based on the country user selects. Data to include: 
 
     1. Number of privately owned firearms
     2. Rate of civilian firearm posession per 100k people
     3. Total number of gun deaths
     4. Rate of all gun deaths per 100k people
     
+-There is a plethora of data available through this API, but for the purpose of this exercise I am focusing on these four data points for each country. 
 -This data will be retrieved from [GunPolicy.org](http://www.gunpolicy.org) through their [API](http://www.gunpolicy.org/api).
 
 
-## GunPolicy.org: International firearm injury prevention and policy
+## API and Data Sample
 
+"GunPolicy.org: International firearm injury prevention and policy"
 Base URL of the API I'm using is https://www.gunpolicy.org
 
-This particular query shows the [countries with available data]:
-(https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&format=raw&resource=getlocations)
+This particular query shows the [countries with available data](https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&format=raw&resource=getlocations)
 
 {
             "id": "7",
@@ -32,8 +33,7 @@ This particular query shows the [countries with available data]:
             "iso3": "ARG"
         },
 	
-This particular query shows the [# of annual deaths resulting from firearms in Netherlands]:
-(https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=125&format=raw)
+This particular query shows the [# of annual deaths resulting from firearms in Netherlands](https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=125&format=raw)
 
 {
     "result": {
@@ -104,16 +104,16 @@ This particular query shows the [# of annual deaths resulting from firearms in N
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Pseudocode(site planning/implementation) |   | 3 hr | .5hr    |    |
-|HTML structure (basic design/requirements) |   | 2hr | .5hr    |    |
-|CSS + flexbox (site layout/appearance) |   | 2 hr | .25hr    |    |
-|Working w/ API-working with data  | H  | 2hr |     | 2hr   |
-|Working w/ API-javascript | H  | 3 hr |     |    |
+|Pseudocode(site planning/implementation) | M  | 3 hr | 1hr    |    |
+|HTML structure (basic design/requirements) | M  | 2hr | .5hr    |    |
+|CSS + flexbox (site layout/appearance) | L  | 2 hr | .25hr    |    |
+|Working w/ API-working with data  | H  | 2hr | 2hr    |    |
+|Working w/ API-javascript | H  | 3 hr | 1.25hr    |    |
 |Working w/ API-improve data/presentation | H  | 3hr | .5hr    |    |
-|Coding (any) |  H | 3 hr |     |    |
+|Coding (any) |  L | 3 hr | .5hr    |    |
 |MVP focus (focus on overall requirements/best practices) |  H | 3hr | .5hr    |    |
-|Troubleshooting |  H | 3hr |     |    |
-| Total | H | 25hrs|  |  |
+|Troubleshooting |  M | 3hr | .5hr    |    |
+| Total |  | 25hrs|  |  |
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
