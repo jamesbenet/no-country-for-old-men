@@ -18,13 +18,13 @@
 
 
 
-
-const getGunDeaths = async () => {
-  const url = 'https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw' 
+const getGunDeaths = async (countryId) => {
+  const url = `https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=${countryId}&format=raw` 
   try {
     const response = await axios.get(url)
     console.log(response)
-    // let countryList = Object.keys(response.data.message)
+    // let gunDeathsList = Object.keys(response.data[0])
+    // console.log(gunDeathsList)
     // setOptions(countryList)
     // return countryList
     // console.log(countryList)
@@ -34,14 +34,49 @@ const getGunDeaths = async () => {
   }
 }
 
+
+function GetSelectedValue(){
+  const e = document.getElementById("country-select");
+  const result = e.options[e.selectedIndex].value;
+  // console.log(result)
+  getGunDeaths(result)
+  // document.getElementById("result").innerHTML = result;
+}
+
+
+// const form1 = document.getElementById('form');
+// const countrySelector = document.getElementById('country-select');
+// const countryId = document.getElementById('country-id');
+
+// console.log(countryId)
+
+// const countryId = document.getElementById("submit").value
+// let countryID = document.querySelector('#country-select').value;
+// console.log(countryId)
 getGunDeaths()
 
-// select country
-const selectsCanada = document.querySelector('.canada')
-console.log(selectsCanada)
 
 
 
+// function getValue(e) {
+//   e.preventDefault()
+//   const optionValue = document.querySelector('#select-breed').value
+//   console.log(optionValue)
+  // getBreedImage(optionValue)
+// }
+
+
+// Evenhandler for form
+// const form = document.querySelector('form')
+// form.addEventListener("submit", getValue)
+
+
+// const selectsCanada = document.querySelector('.canada')
+// console.log(selectsCanada)
+
+
+// const input = document.querySelector('input')
+// input.addEventListener('click', getGunDeaths)
 
 //ENDPOINT= TOTAL # OF GUN DEATHS BY LOCATION
 
