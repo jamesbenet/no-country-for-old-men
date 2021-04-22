@@ -17,31 +17,99 @@
   
 </head>
 <body>
-  <h1>No Country for Old Men: </h1>
-  <h2>A Gun Epidemic in the United States</h2>
+  <center>
+    <h1>No Country for Old Men: </h1> <h2>A Gun Epidemic in the United States?</h2>
+  </center>
 
-  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br>
+<div class="container">
+  <div class = "column">
+  <select id="country-select">
+    <option class = "country" value="31">CANADA</option>
+    <option class = "country" value="113">MEXICO</option>
+    <option class = "country" value="153">RUSSIA</option>
+    <option class = "country" value="192">UK</option>
+  </select>
+
+  <button type="button">Get Country Data</button>
+  <!-- <input type="submit" value="Get Data!"> -->
+  <!-- <button id="submit">Get Country Data</button> -->
+  <!-- <input type="hidden" name="country-id" id="country-id">
+  <input type="submit"></input> -->
+<!-- </form> -->
+
+<span id='result'>The result is: </span>
+
+<div id="country-data"></div>
+<!-- end column 1 div -->
+</div>
+<div class = "column">
+  <p> 
+    <h3>Number of Privately Owned Firearms:</h3> 
+    The estimated total number of guns (both licit and illicit) held by civilians in the United States is 265,000,000 to 393,347,000.<br>
+    <h3>Rate of Civilian Firearm Possession per 100 Population:</h3> 
+    2007: 101.05<br>
+    2017: 120.05<br>
+
+    <h3>Rate of All Gun Deaths per 100,000 People:</h3>  
+2019: 39,682<br>
+2018: 39,740<br>
+2017: 39,773<br>
+2016: 38,658<br>
+2015: 36,247<br>
+2014: 33,594<br>
+2013: 33,635<br>
+2012: 33,563<br>
+2011: 32,351<br>
+2010: 31,672<br>
+2009: 31,347<br>
+2008: 31,593<br>
+2007: 31,224<br>
+2006: 30,896<br>
+2005: 30,694<br>
+2004: 29,569<br>
+2003: 30,136<br>
+2002: 30,242<br>
+2001: 29,573<br>
+2000: 28,663<br>
+1999: 28,874<br>
+
+<h3>Rate of All Gun Deaths per 100,000 People:</h3> <br>
+2019: 12.09<br>
+2018: 12.15<br>
+2017: 12.21<br>
+2016: 11.96<br>
+2015: 11.28<br>
+2014: 10.54<br>
+2013: 10.64<br>
+2012: 10.69<br>
+2011: 10.38<br>
+2010: 10.26<br>
+2009: 10.22<br>
+2008: 10.39<br>
+2007: 10.37<br>
+2006: 10.35<br>
+2005: 10.39<br>
+2004: 10.10<br>
+2003: 10.39<br>
+2002: 10.51<br>
+2001: 10.38<br>
+2000: 10.19<br>
+1999: 10.35<br>  
+  </p>
+  <!-- end column 2 -->
+</div>
+  <!-- end container div -->
+</div>
+  
+  
+  
+  <br><br><br><br><br>
 
 
  
   <!-- <form id="form1"> -->
-	  <select id="country-select">
-      <option class = "country" value="31">CANADA</option>
-      <option class = "country" value="113">MEXICO</option>
-      <option class = "country" value="153">RUSSIA</option>
-      <option class = "country" value="192">UK</option>
-    </select>
-
-    <button type="button" onclick="GetSelectedValue()">Get Country Data</button>
-    <!-- <input type="submit" value="Get Data!"> -->
-    <!-- <button id="submit">Get Country Data</button> -->
-    <!-- <input type="hidden" name="country-id" id="country-id">
-    <input type="submit"></input> -->
-  <!-- </form> -->
-	
-  <span id='result'>The result is: </span>
-
-  <div class='countryData'></div>
+	  
 	
 
 

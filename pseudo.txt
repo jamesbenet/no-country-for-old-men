@@ -1,18 +1,25 @@
 banner
   page title
   background image?
-present US data
-dropdown menu of 10 countries
-  design drop-down menu/button (use button?)
-user selects country
-  user selects Canada--option tag has value"31"
-store this value in a variable
-  
 
-eventhandler
-return four data sets (how to handle incomplete data)
-     side by side or underneath?
-asterix/qualifier/explanation of data
+present US data
+
+dropdown menu of 4 countries
+  design drop-down menu/button
+
+user selects country
+  eventhandler
+    on click/submit--store option value ex. if selects Canada, value is "31"
+  call primary function which gets data for that country
+    4 functions? or 4 functions within a function
+  return four data sets (how to handle incomplete data)
+    get correct data from 4 different data objects
+
+append data to DOM
+  side by side or underneath?
+  asterix/qualifier/explanation of data
+
+remove previous data on next click event
 footer
   gunpolicy.org link/credit
   my info
@@ -68,5 +75,102 @@ https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&
 total guns
 
 https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=number_of_privately_owned_firearms&location_id=10&format=raw
+
+
+//to delete if not needed:
+
+// function GetSelectedValue(){
+//   const e = document.getElementById("country-select");
+//   const result = e.options[e.selectedIndex].value;
+//   console.log(result)
+//   getGunDeaths(result)
+//   getGunDeathRate(result)
+//   document.getElementById("result").innerHTML = result;
+// }
+
+
+// const form1 = document.getElementById('form');
+// const countrySelector = document.getElementById('country-select');
+// const countryId = document.getElementById('country-id');
+
+// console.log(countryId)
+
+// const countryId = document.getElementById("submit").value
+// let countryID = document.querySelector('#country-select').value;
+// console.log(countryId)
+// getGunDeaths()
+
+
+
+
+// function getValue(e) {
+//   e.preventDefault()
+//   const optionValue = document.querySelector('#select-breed').value
+//   console.log(optionValue)
+  // getBreedImage(optionValue)
+// }
+
+
+// Evenhandler for form
+// const form = document.querySelector('form')
+// form.addEventListener("submit", getValue)
+
+
+// const selectsCanada = document.querySelector('.canada')
+// console.log(selectsCanada)
+
+
+// const input = document.querySelector('input')
+// input.addEventListener('click', getGunDeaths)
+
+//ENDPOINT= TOTAL # OF GUN DEATHS BY LOCATION
+
+      // https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw
+
+
+      //ajax intro starter code solution--using country list URL
+
+// const getData = () => {
+  // Remove old element's
+  // removePeople()
+
+//   const url = 'https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=total_number_of_gun_deaths&location_id=10&format=raw'
+
+//   axios.get(url)
+//     .then((res) => {
+//       // console.log(res.data.results)
+//       const response = res.data.results
+//       console.log(response)
+//     })
+  
+//   .catch((error) => {
+//     console.error(error)
+//   })
+
+
+// }
+
+// getData()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

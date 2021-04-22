@@ -1,9 +1,40 @@
 
-/* https://www.freecodecamp.org/news/how-to-create-a-dropdown-menu-with-css-and-javascript/ */
 body {
-  background-color: coral;
+  background-color: rgb(204, 189, 189);
 	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
+
+h1, h2 {
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  column-count: 2;
+  column-width: 300px;
+  column-gap: 25px;
+}
+
+.column {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* REPLACED DIV (TAG WITH CLASS "option" AND ID 'option1') which contained option 1 with a select/option tag in my dropdown menu */
 /* 
