@@ -91,9 +91,9 @@ This particular query shows the [# of annual deaths resulting from firearms in N
 |April 16-18| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |April 19| Project Approval | Complete
 |April 20| Core Application Structure (HTML, CSS, etc.) | Complete
-|April 20| Pseudocode / actual code | Incomplete
-|April 21| Initial Clickable Model  | Incomplete
-|April 22| MVP | Incomplete
+|April 20| Pseudocode / actual code | Complete
+|April 21| Initial Clickable Model  | Complete
+|April 22| MVP | Complete
 |April 23| Presentations | Incomplete
 
 ## Priority Matrix
@@ -104,16 +104,16 @@ This particular query shows the [# of annual deaths resulting from firearms in N
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Pseudocode(site planning/implementation) | M  | 3 hr | 1hr    |    |
-|HTML structure (basic design/requirements) | M  | 2hr | .5hr    |    |
-|CSS + flexbox (site layout/appearance) | L  | 2 hr | .25hr    |    |
-|Working w/ API-working with data  | H  | 2hr | 2hr    |    |
-|Working w/ API-javascript | H  | 3 hr | 1.25hr    |    |
-|Working w/ API-improve data/presentation | H  | 3hr | .5hr    |    |
-|Coding (any) |  L | 3 hr | .5hr    |    |
-|MVP focus (focus on overall requirements/best practices) |  H | 3hr | .5hr    |    |
-|Troubleshooting |  M | 3hr | .5hr    |    |
-| Total |  | 25hrs|  |  |
+|Pseudocode(site planning/implementation) | M  | 3 hr | 2hr    |    |
+|HTML structure (basic design/requirements) | M  | 2hr | 2hr    |    |
+|CSS + flexbox (site layout/appearance) | L  | 2 hr | 2hr    |    |
+|Working w/ API-working with data  | H  | 2hr | 4hr    |    |
+|Working w/ API-javascript | H  | 3 hr | 2hr    |    |
+|Working w/ API-improve data/presentation | H  | 3hr | 2hr    |    |
+|Coding (any) |  L | 3 hr | 2hr    |    |
+|MVP focus (focus on overall requirements/best practices) |  H | 3hr | 2.5hr    |    |
+|Troubleshooting |  M | 3hr | 2hr    |    |
+| Total |  | 25hrs|  |  |20.5
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
