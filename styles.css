@@ -4,6 +4,10 @@ body {
 	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
+.banner {
+  background-color: #ffffff;
+}
+
 h1, h2 {
   display: inline-block;
 }
@@ -12,7 +16,7 @@ h1, h2 {
   display: flex;
   justify-content: space-evenly;
   column-count: 2;
-  column-width: 300px;
+  column-width: 250px;
   column-gap: 25px;
 }
 
@@ -20,8 +24,14 @@ h1, h2 {
   break-inside: avoid;
   page-break-inside: avoid;
   text-align: center;
+  
 }
 
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
 
 
 

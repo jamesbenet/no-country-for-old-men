@@ -13,11 +13,11 @@
 
 //get location value on click submit; the call get data function
 const gun = document.querySelector('button')
-gun.addEventListener('click', () => {
-  // e.preventDefault()
-  // removeCountry()
-  var myobj = document.getElementById("country-data")
-  myobj.remove()
+
+gun.addEventListener('click', (e) => {
+  e.preventDefault()
+  removeChoice()
+  
   const location = document.querySelector('select').value
   getGunDeaths(location)
   getGunDeathRate(location)
@@ -90,34 +90,38 @@ function showDeathData(data) {
 
   let gunData = `
   <h1 id="country-name">${data.location}</h1>
-  // <p> Number of total gun deaths, by year: ${data.columnValue} </p>
+  <p> <h4>Number of total gun deaths, by year:</h4> ${data.columnValue} </p>
   `
-  document.querySelector('#country-data').insertAdjacentHTML('beforeend', gunData)
+  document.querySelector('#country-data').insertAdjacentHTML('afterbegin', gunData)
   return gunData
 }
 
 function showDeathRate(data) {
   let gunData = `
-  <p> Rate of All Gun Deaths per 100,000 People: ${data.columnValue} </p>
+  <p> <h4>Rate of All Gun Deaths per 100,000 People:</h4> ${data.columnValue} </p>
   `
   document.querySelector('#country-data').insertAdjacentHTML('beforeend', gunData)
   return gunData
 }
 
 function showGunsOwned(data) {
-  let gunData = `<p>The estimated total number of guns (both licit and illicit) held by civilians is: ${data.columnValue}</p>`
+  let gunData = `<p><h4>The estimated total number of guns (both licit and illicit) held by civilians is:</h4> ${data.columnValue}</p>`
   document.querySelector('#country-data').insertAdjacentHTML('beforeend', gunData)
   return gunData
 }
 
 function showGunsOwnedRate(data) {
-  let gunData = `<p>The estimated rate of private gun ownership (both licit and illicit) per 100 people is: ${data.columnValue}</p>`
+  let gunData = `<p><h4>The estimated rate of private gun ownership (both licit and illicit) per 100 people is:</h4> ${data.columnValue}</p>`
   document.querySelector('#country-data').insertAdjacentHTML('beforeend', gunData)
   return gunData
 }
 
-
-
+function removeChoice() {
+  const oldChoice = document.querySelector('#country-data')
+  while (oldChoice.lastChild) {
+    oldChoice.removeChild(oldChoice.lastChild)
+  }
+}
 // console.log(gunDeathObject)
     // console.log(gunDeathObject.location_id)
     // console.log(gunDeathObject.location)
@@ -131,11 +135,14 @@ function showGunsOwnedRate(data) {
     // return countryList
     // console.log(countryList)
 
-    // function removeCountry() {
-    //   // write code here
-    //   // Make sure to call this function???
-    //    const removeElememt = document.querySelector('#country-data')
-    //    while (removeElememt.lastChild) {
-    //      removeElememt.removeChild(removeElememt.lastChild)
-    //    }
-    //  }
+  
+
+
+//     function removeCountry() {
+//   // write code here
+//   // Make sure to call this function???
+//    const removeElememt = document.querySelector('#country-data')
+//    while (removeElememt.lastChild) {
+//      removeElememt.removeChild(removeElememt.lastChild)
+//    }
+//  }
