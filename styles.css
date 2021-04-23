@@ -12,21 +12,6 @@ h1, h2 {
   display: inline-block;
 }
 
-/* .container {
-  display: flex;
-  justify-content: space-evenly;
-  column-count: 2;
-  column-width: 250px;
-  column-gap: 25px;
-}
-
-.column {
-  break-inside: avoid;
-  page-break-inside: avoid;
-  text-align: center;
-  
-} */
-
 .other-container{
   display: flex;
   justify-content: space-evenly;
@@ -36,7 +21,12 @@ h1, h2 {
 
 }
 
-.data-container1, .data-container2, .data-container3 {
+.data-container1 {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  text-align: left;
+}
+.data-container2, .data-container3 {
   break-inside: avoid;
   page-break-inside: avoid;
   text-align: center;
@@ -71,60 +61,17 @@ footer {
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* REPLACED DIV (TAG WITH CLASS "option" AND ID 'option1') which contained option 1 with a select/option tag in my dropdown menu */
-/* 
-.hide {
-    max-height: 0 !important;
+  /* .container {
+  display: flex;
+  justify-content: space-evenly;
+  column-count: 2;
+  column-width: 250px;
+  column-gap: 25px;
 }
 
-.dropdown{
-	border: 0.1em solid black;
-	width: 10em;
-	margin-bottom: 1em;
-}
-
-.dropdown .title{
-	margin: .3em .3em .3em .3em;	
-	width: 100%;
-}
-
-.dropdown .title .fa-angle-right{
-	float: right;
-	margin-right: .7em;
-	transition: transform .3s;
-}
-
-.dropdown .menu{
-	transition: max-height .5s ease-out;
-	max-height: 20em;
-	overflow: hidden;
-}
-
-.dropdown .menu .option{
-	margin: .3em .3em .3em .3em;
-	margin-top: 0.3em;
-}
-
-.dropdown .menu .option:hover{
-	background: rgba(0,0,0,0.2);
-}
-
-.pointerCursor:hover{
-	cursor: pointer;
-}
-
-.rotate-90{
-	transform: rotate(90deg);
+.column {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  text-align: center;
+  
 } */

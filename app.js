@@ -1,22 +1,20 @@
 
-
-// https://cors-anywhere.herokuapp.com/
-      
-
-// Create dynamic dropdown menu from GET all countries (from dogs-code-along)
-      // https://dog.ceo/api/breeds/list/all
-
-
-
-
-
-
 //get location value on click submit; the call get data function
+
+
 const gun = document.querySelector('button')
+
+////////////////////////////////////////////
+// - WHEN USER CHOOSES A COUNTRY, CLICK EVENT TRIGGERS THIS FUNCTION.
+// - FOUR OTHER FUNCTIONS ARE CONTAINED WITHIN, EACH ONE IS INVOKED 
+///////SEQUENTIALLY TO GETS DATA FROM A DIFFERENT ENDPOINT OF THE API I'M USING
+///////////////////////////////////////////
+
+
 
 gun.addEventListener('click', (e) => {
   e.preventDefault()
-  removeChoice()
+  removeUserChoice()
   
   const location = document.querySelector('select').value
   getGunDeaths(location)
@@ -24,6 +22,14 @@ gun.addEventListener('click', (e) => {
   getGunsOwned(location)
   getGunsOwnedRate(location)
 })
+
+////////////////////////////////////////////
+// - THIS IS THE FIRST FUNCTION INVOKED ABOVE
+// - IT GETS THE TOTAL GUN DEATHS IN SELECTED COUNTRY
+// - IT ALSO INVOKES THE showDeathData() TO DISLPAY THE DATA 
+// - THE THREE FUNCTIONS AFTER IT OPERATE THE SAME WAY
+//////// EACH HAVE THEIR OWN UNIQUE SHOW DATA FUNCTION
+///////////////////////////////////////////
 
 
 const getGunDeaths = async (countryId) => {
@@ -86,8 +92,6 @@ const getGunsOwnedRate = async (countryId) => {
 
 
 function showDeathData(data) {
-
-
   let gunData = `
   <h1 id="country-name">${data.location}</h1>
   <p> <h4>Number of total gun deaths, by year:</h4> ${data.columnValue} </p>
@@ -116,33 +120,9 @@ function showGunsOwnedRate(data) {
   return gunData
 }
 
-function removeChoice() {
+function removeUserChoice() {
   const oldChoice = document.querySelector('#country-data')
   while (oldChoice.lastChild) {
     oldChoice.removeChild(oldChoice.lastChild)
   }
 }
-// console.log(gunDeathObject)
-    // console.log(gunDeathObject.location_id)
-    // console.log(gunDeathObject.location)
-    // console.log(gunDeathObject.columnValue)
-    // console.log(gunDeathObject.columnPreamble)
- // console.log(preamble)
-    // console.log(Object.keys(response))
-    // let gunDeathsList = Object.keys(response.data[0])
-    // console.log(gunDeathsList)
-    // setOptions(countryList)
-    // return countryList
-    // console.log(countryList)
-
-  
-
-
-//     function removeCountry() {
-//   // write code here
-//   // Make sure to call this function???
-//    const removeElememt = document.querySelector('#country-data')
-//    while (removeElememt.lastChild) {
-//      removeElememt.removeChild(removeElememt.lastChild)
-//    }
-//  }
