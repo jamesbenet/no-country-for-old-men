@@ -1,5 +1,5 @@
 
-//get location value on click submit; the call get data function
+//get location value from select/option/button on click submit; the call get data function
 
 
 const gun = document.querySelector('button')
@@ -46,6 +46,10 @@ const getGunDeaths = async (countryId) => {
   }
 }
 
+////////////////////////////////////////////
+// - RATE OF GUN DEATHS (2nd endpoint)
+///////////////////////////////////////////
+
 const getGunDeathRate = async (countryId) => {
   const url = `https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=rate_of_all_gun_deaths_per_100_000_people&location_id=${countryId}&format=raw` 
   try {
@@ -59,6 +63,10 @@ const getGunDeathRate = async (countryId) => {
     console.error(error)
   }
 }
+
+////////////////////////////////////////////
+// - CIVILIAN GUNS OWNED(3rd endpoint)
+///////////////////////////////////////////
 
 const getGunsOwned = async (countryId) => {
   const url = `https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=number_of_privately_owned_firearms&location_id=${countryId}&format=raw` 
@@ -75,6 +83,10 @@ const getGunsOwned = async (countryId) => {
   }
 }
 
+////////////////////////////////////////////
+// - CIVILIAN GUNS OWNED(4th endpoint)
+///////////////////////////////////////////
+
 const getGunsOwnedRate = async (countryId) => {
   const url = `https://cors-anywhere.herokuapp.com/https://www.gunpolicy.org/index.php?option=com_api&app=gpodatapage&clientid=267&key=69ac9405b94c3b1f632641d48cd80745&resource=getcategorydata&category=rate_of_civilian_firearm_possession&location_id=${countryId}&format=raw` 
   try {
@@ -90,6 +102,11 @@ const getGunsOwnedRate = async (countryId) => {
   }
 }
 
+////////////////////////////////////////////
+// -  THE FOUR FUNCTIONS BELOW DISPLAY DATA 
+// -  TO EMPTY DIV ON WEBPAGE
+// -  EACH ARE UNIQUE TO THE FUNCTION THAT INVOKES THEM
+///////////////////////////////////////////
 
 function showDeathData(data) {
   let gunData = `
@@ -119,6 +136,10 @@ function showGunsOwnedRate(data) {
   document.querySelector('#country-data').insertAdjacentHTML('beforeend', gunData)
   return gunData
 }
+
+//////////////////////////////////////////////////////////////////
+// - REMOVE USERS' PREVIOUS SELECTION BEFORE DISPLAYING NEW CHOICE
+//////////////////////////////////////////////////////////////////
 
 function removeUserChoice() {
   const oldChoice = document.querySelector('#country-data')

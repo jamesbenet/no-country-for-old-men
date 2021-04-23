@@ -1,6 +1,8 @@
 # Project Overview
 
-## No Country for Old Men
+## A Gun Data App:
+
+[How the US Compares to the Rest of the World (No Country for Old Men)](https://jamesbenet.github.io/no-country-for-old-men/) 
 
 
 ## Project Description
@@ -104,16 +106,16 @@ This particular query shows the [# of annual deaths resulting from firearms in N
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-|Pseudocode(site planning/implementation) | M  | 3 hr | 2hr    |    |
+|Pseudocode(site planning/implementation) | M  | 3 hr | 3hr    |    |
 |HTML structure (basic design/requirements) | M  | 2hr | 3hr    |    |
 |CSS + flexbox (site layout/appearance) | L  | 2 hr | 2hr    |    |
 |Working w/ API-working with data  | H  | 2hr | 4hr    |    |
-|Working w/ API-javascript | H  | 3 hr | 2hr    |    |
-|Working w/ API-improve data/presentation | H  | 3hr | 2hr    |    |
+|Working w/ API-javascript | H  | 3 hr | 3hr    |    |
+|Working w/ API-improve data/presentation | H  | 3hr | 3hr    |    |
 |Coding (any) |  L | 3 hr | 2hr    |    |
 |MVP focus (focus on overall requirements/best practices) |  H | 3hr | 2.5hr    |    |
 |Troubleshooting |  M | 3hr | 6hr    |    |
-| Total |  | 25hrs|  |  |25.5
+| Total |  | 25hrs|  |  |28.5
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
@@ -125,6 +127,6 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+ -switched from 2 column to 3 column layout to better display data retrieved from API
 
 

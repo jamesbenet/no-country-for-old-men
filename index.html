@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="app.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <!-- STYLES FONTS LINKED IN RIGHT PLACE? -->
-  <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
   <link rel= "stylesheet" href="styles.css">
-  <title>NO COUNTRY FOR OLD MEN: A GUN EPIDEMIC IN THE UNITED STATES</title>
+
+  <title>A Gun Data App: How the U.S. Compares to the World</title>
 </head>
 <body>
   <div class = "banner">
@@ -21,7 +22,7 @@
   <div class = "other-container" class = "box">
     <div class = "data-container1">
       <h3>Number of Privately Owned<br> Firearms in the U.S.:</h3> 
-      There are estimated to be between 265,000,000 to 393,347,000<br> guns (both licit and illicit) held by civilians in the U.S.<br> 
+      There are estimated to be between <br>265,000,000 to 393,347,000 guns<br>(both licit and illicit) held <br>by civilians in the U.S.<br> 
       <p> 
         <h3>Rate of All Gun Deaths in the<br> U.S. per 100,000 People:</h3>  
           2019: 39,682<br>
@@ -49,11 +50,15 @@
     <div class = "data-container2">
       <center>
         <div class = "other-countries">
-          <select id="country-select">
+          <select id ="country-select">
             <option class = "country" value="31">CANADA</option>
             <option class = "country" value="113">MEXICO</option>
             <option class = "country" value="136">NORWAY</option>
             <option class = "country" value="192">UK</option>
+            <option class = "country" value="66">FRANCE</option>
+            <option class = "country" value="69">GERMANY</option>
+            <option class = "country" value="10">AUSTRALIA</option>
+            <option class = "country" value="172">SPAIN</option>
           </select>
           <button type="button">Select country to view available data</button>
           <div id="country-data"></div>
@@ -62,9 +67,9 @@
     </div>
   
     <div class = "data-container3">
-      <h3>Rate of Civilian Firearm<br>Possession per 100 Population:</h3> 
+      <h3>Rate of Civilian Firearm<br>Possession per 100 Population:</h3> <br>
         2007: 101.05<br>
-        2017: 120.05<br>
+        2017: 120.05<br><br>
       <h3>Rate of All Gun Deaths in the<br> U.S. per 100,000 People:</h3> 
       <p>
         2019: 12.09<br>
@@ -96,6 +101,7 @@
   <p>"GunPolicy.org provides evidence-based, public health-oriented information on armed violence, small arms policy and firearm-related injury prevention around the world."<br>
     <h4>All data contained in this site is from <a href="https://www.gunpolicy.org">gunpolicy.org</a> which is hosted by the Sydney School of Public Health @ The University of Sydney. Please see their <a href="https://www.gunpolicy.org">site</a> for more info.</h4>
   "GunPolicy.org publishes evidence from hundreds of jurisdictions, allowing country-by-country comparisons of armed violence and firearm regulation around the world. These pages confirm that many, and probably most small arms are not misused, and that legitimate reasons exist for gun ownership. They also document the injury, death and suffering of gun violence, and show how all states monitor and control firearms to protect the citizen's right to safety, public health and human security."</p>
+    <h4>Site by James Benet © 2021</h4>
 </footer>
 
 </body>
