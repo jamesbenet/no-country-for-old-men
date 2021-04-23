@@ -4,17 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- JAVASCRIPT LINKED IN RIGHT PLACE? -->
-
   <script defer src="app.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!-- STYLES FONTS LINKED IN RIGHT PLACE? -->
   <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
   <link rel= "stylesheet" href="styles.css">
   <title>NO COUNTRY FOR OLD MEN: A GUN EPIDEMIC IN THE UNITED STATES</title>
-
-  
 </head>
 <body>
   <div class = "banner">
@@ -23,29 +18,17 @@
   </center>
 </div>
 
-  <br><br><br><br><br>
-<div class="container">
-  <div class = "column">
-    <select id="country-select">
-      <option class = "country" value="31">CANADA</option>
-      <option class = "country" value="113">MEXICO</option>
-      <option class = "country" value="136">NORWAY</option>
-      <option class = "country" value="192">UK</option>
-    </select>
-    <button type="button">Get Country Data</button>
-    <span id='result'>The result is: </span> 
-  
-  <div id="country-data"></div>
+<!-- <div class="container"> -->
+  <!-- <div class = "column"> -->
+    
   <!-- end column 1 div -->
-  </div>  
-<div class = "column">
+  <!-- </div>   -->
+<!-- <div class = "column"> -->
+  <div class = "other-container">
+    <div class = "data-container1">
+      <h3>Number of Privately Owned<br> Firearms in the U.S.:</h3> 
+    There are estimated to be between 265,000,000 to 393,347,000<br> guns (both licit and illicit) held by civilians in the U.S.<br> 
   <p> 
-    <h3>Number of Privately Owned<br> Firearms in the U.S.:</h3> 
-    There are estimated to be between 265,000,000 to 393,347,000<br> guns (both licit and illicit) held by civilians in the U.S.<br>
-    <h3>Rate of Civilian Firearm<br>Possession per 100 Population:</h3> 
-    2007: 101.05<br>
-    2017: 120.05<br>
-
     <h3>Rate of All Gun Deaths in the<br> U.S. per 100,000 People:</h3>  
 2019: 39,682<br>
 2018: 39,740<br>
@@ -68,7 +51,32 @@
 2001: 29,573<br>
 2000: 28,663<br>
 1999: 28,874<br>
-
+    
+  </div>
+  <div class = "data-container2">
+    <center>
+      <div class = "other-countries">
+        
+      <select id="country-select">
+            <option class = "country" value="31">CANADA</option>
+            <option class = "country" value="113">MEXICO</option>
+            <option class = "country" value="136">NORWAY</option>
+            <option class = "country" value="192">UK</option>
+          </select>
+          
+          <button type="button">Select country to view available data</button>
+        
+          <!-- <span id='result'>The result is: </span>  -->
+        
+        <div id="country-data"></div>
+        </div>
+      </center>
+  </div>
+  
+  <div class = "data-container3">
+    <h3>Rate of Civilian Firearm<br>Possession per 100 Population:</h3> 
+    2007: 101.05<br>
+    2017: 120.05<br>
 <h3>Rate of All Gun Deaths in the<br> U.S. per 100,000 People:</h3> <br>
 2019: 12.09<br>
 2018: 12.15<br>
@@ -92,11 +100,18 @@
 2000: 10.19<br>
 1999: 10.35<br>  
   </p>
-  <!-- end column 2 -->
+    
+</div>
+<!-- <div class = "data-container4">
+  
+</div> -->
 </div>
 
+  <!-- end column 2 -->
+<!-- </div> -->
+
   <!-- end container div -->
-</div>
+<!-- </div> -->
 	  
 <footer>
   <p>"GunPolicy.org provides evidence-based, public health-oriented information on armed violence, small arms policy and firearm-related injury prevention around the world."<br>
@@ -107,10 +122,4 @@
 </body>
 </html>
 
-<div class = "other-container">
-<div class = "data-container1"></div>
-<div class = "data-container2"></div>
-<div class = "data-container3"></div>
-<div class = "data-container4"></div>
-</div>
 
